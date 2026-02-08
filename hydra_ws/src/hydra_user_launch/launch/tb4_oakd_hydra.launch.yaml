@@ -1,0 +1,21 @@
+launch:
+
+  # Remap OAKD sim topics -> Hydra expected input topics
+  - set_remap: {from: /hydra/input/left_cam/rgb/image_raw, to: /oakd/rgb/preview/image_raw}
+  - set_remap: {from: /hydra/input/left_cam/rgb/camera_info, to: /oakd/rgb/preview/camera_info}
+  - set_remap: {from: /hydra/input/left_cam/depth_registered/image_rect, to: /oakd/rgb/preview/depth}
+
+
+  # Start Hydra (include the real Hydra launch)
+  - include:
+      file: $(find-pkg-share hydra_ros)/launch/hydra.launch.yaml
+      arg:
+        - {name: use_sim_time, value: "true"}
+        - {name: dataset, value: "uhumans2"}
+        - {name: labelspace, value: "uhumans2_office"}
+        - {name: odom_frame, value: "odom"}
+        - {name: robot_frame, value: "base_link"}
+        - {name: sensor_frame, value: "oakd_rgb_camera_optical_frame"}
+        - {name: input_config_path, value: "/home/$(env USER)/hydra_ws/user_configs/tb4_oakd.yaml"}
+        - {name: start_rviz, value: "false"}
+
