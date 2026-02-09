@@ -172,6 +172,7 @@ ROS Python packages such as rclpy must be provided by the ROS installation and m
 Source ROS
 
 ```
+wsl ~ -d Ubuntu-24.04
 source /opt/ros/jazzy/setup.bash
 ```
 
