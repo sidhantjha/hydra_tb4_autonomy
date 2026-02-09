@@ -230,6 +230,8 @@ Launch RViz with Hydra configuration
 
 ```
 ros2 launch hydra_tb4_stack hydra_rviz.launch.py
+rviz2 -d ~/hydra_tb4_autonomy/hydra_tb4_stack/install/hydra_tb4_stack/share/hydra_tb4_stack/rviz/hydra_config1.rviz
+
 ```
 
 RViz configuration
