@@ -16,6 +16,6 @@ launch:
         - {name: odom_frame, value: "odom"}
         - {name: robot_frame, value: "base_link"}
         - {name: sensor_frame, value: "oakd_rgb_camera_optical_frame"}
-        - {name: input_config_path, value: "/home/$(env USER)/hydra_ws/user_configs/tb4_oakd.yaml"}
+        - {name: input_config_path, value: "/home/$(env USER)/hydra_tb4_autonomy/hydra_ws/user_configs/tb4_oakd.yaml"}
         - {name: start_rviz, value: "false"}
 
