@@ -219,7 +219,7 @@ source hydra_tb4_stack/install/setup.bash
 Launch Gazebo, Hydra, and the waypoint follower
 
 ```
-ros2 launch hydra_tb4_stack tb4_warehouse_hydra.launch.py
+ros2 launch hydra_tb4_stack tb4_warehouse_hydra.launch.py gui:=false
 ```
 
 ---
