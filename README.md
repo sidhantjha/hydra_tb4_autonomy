@@ -11,20 +11,29 @@ This repository documents and implements a fully working integration of [MIT SPA
 The core challenge: Hydra is designed for the uHumans2 dataset with a specific sensor suite. This stack makes it work on a completely different robot and sensor configuration, without modifying Hydra's core source code.
 
 ---
+## Demo
 
+<p align="center">
+  <img src="hydra_demo1.png" width="32%"/>
+  &nbsp;
+  <img src="hydra_demo2.png" width="32%"/>
+  &nbsp;
+  <img src="hydra_demo3.png" width="32%"/>
+  <br/>
+  <em>Left: 3D scene graph output &nbsp;&nbsp;&nbsp; Center: TSDF Mesh Reconstruction &nbsp;&nbsp;&nbsp;  Right: TSDF Occupancy Map and Odometry</em>
+</p>
+
+---
 ## Results
 
 ### 3D Mesh Reconstruction
-> *(placeholder — insert RViz screenshot of mesh)*
+> <img src="hydra_demo2.png" width="700"/>
 
 ### Scene Graph Visualization
-> *(placeholder — insert RViz screenshot showing graph with rooms, places, objects layers)*
+> <img src="hydra_demo1.png" width="700"/>
 
 ### TSDF Occupancy Map
-> *(placeholder — insert occupancy grid screenshot)*
-
-### Live Camera + Scene Graph
-> *(placeholder — insert composite RViz view)*
+> <img src="hydra_demo3.png" width="700"/>
 
 ---
 
